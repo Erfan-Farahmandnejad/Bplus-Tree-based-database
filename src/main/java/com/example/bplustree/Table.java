@@ -11,15 +11,12 @@ import java.util.List;
 public class Table {
 
 
-    //todo: fill these maps in b+ tree when making table
     private UnsortedTableMap<Integer,String> rows =new UnsortedTableMap<>();//map row names to a specific row
     private UnsortedTableMap<String,Column> columns =new UnsortedTableMap<>();//map column names to a specific column
     private BPlusTree tableTree=new BPlusTree();//this table tree
-    private   UnsortedTableMap<String, List<Integer>>IndexesOfKey=new UnsortedTableMap<String, List<Integer>>();
+    private UnsortedTableMap<String, List<Integer>>IndexesOfKey=new UnsortedTableMap<String, List<Integer>>();
     private String tableName;
     private String tableKey;
-
-    //private List<String>RowsNames;
     private List<Column>columnsList=new ArrayList<>();
 
     public Table(String tableName) {

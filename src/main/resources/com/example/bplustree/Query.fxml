@@ -6,7 +6,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane fx:id="anch_Query" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #000000; -fx-background-radius: 30; -fx-border-color: #085E45; -fx-border-width: 3; -fx-border-radius: 30;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bplustree.Query">
    <children>
       <TreeView fx:id="trView_Tables" editable="true" layoutX="349.0" prefHeight="172.0" prefWidth="202.0" style="-fx-background-color: #012921; -fx-border-color: #085E45; -fx-border-radius: 30; -fx-background-radius: 30;" />
