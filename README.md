@@ -1,113 +1,100 @@
-# TreeProjects
+<!-- Begin README in LTR mode -->
+<div dir="ltr">
 
-<div dir='rtl' align="center">
+# B+ Tree Database Management System
 
+---
 
- به نام پروردگار هدایت کننده به راه راست
+## **📖 Subject: Overview**
+This project implements a **B+ Tree-based database management system (DBMS)** to simulate real-world database operations such as indexing, searching, adding, and deleting records efficiently. By leveraging the **B+ Tree** data structure, the project optimizes these operations, showcasing the power of advanced indexing mechanisms in modern database systems.
 
-  دانشگاه اصفهان
+The project also includes a **Graphical User Interface (GUI)** built with **JavaFX**, providing an intuitive and user-friendly way to interact with the database.
 
-  ساختمان داده – دکتر رمضانی 
+---
 
-  پاییز ۰۲-۰۳
+## **🎯 Objectives**
+- Master the **B+ Tree data structure**, including its **self-balancing** and indexing features.
+- Simulate core **database functionalities**, including table creation and index management.
+- Enhance familiarity with database systems and concepts.
+- Develop a practical understanding of **data organization** and efficient querying.
 
-  پروژه چهارم - سیستم پایگاه‌ داده
+---
 
+## **🚀 Features**
 
+### **1. Core Features**
+1. **B+ Tree Implementation**:
+   - Complete implementation of the B+ Tree with **index nodes** and **leaf nodes**.
+   - Efficient **insert**, **search**, and **delete** operations.
+   - Self-balancing mechanisms to maintain optimal performance.
 
-  
-  طراحان پروژه : امیرعلی گلی – علی ابراهیمی
-</div>
+2. **Table Management**:
+   - Create tables with custom attributes (e.g., column names and data types).
+   - Add, update, and delete records in tables.
 
-<div dir='rtl' align="justify">
-  
-### مبحث : درخت
-اهداف پروژه :
-+	کار با ساختمان داده درخت
-+	پیاده‌سازی عملیات‌های پرکاربرد درخت
-+ آشنایی با پایگاه داده‌ها
-  
-  
-در این پروژه قرار است با استفاده از درخت B-Tree یک سیستم پایگاه داده را شبیه‌سازی کنید.
+3. **Indexing**:
+   - Use B+ Trees to build and manage indices for optimized searches.
+   - Support for primary, unique, and non-unique indexes.
 
-## توضیحات پروژه
-1-	 مقدمه
+4. **Query Processing**:
+   - Advanced query capabilities, leveraging B+ Tree indexing for **range-based** and **point-based queries**.
 
-شما در ابتدا باید ساختمان داده B-Tree  را به صورت کامل و با توابع مورد نیاز و عملیات Self-Balancing پیاده سازی کنید. سپس با استفاده از این ساختمان داده سیستم مدیریت پایگاه داده پیاده سازی کنید که برای عملیات جستجو، افزودن و حذف بهبود ایجاد می‌کند.
+5. **Graphical User Interface**:
+   - Developed with **JavaFX**, featuring:
+     - **Table Management View**: Easily create and modify tables.
+     - **Query View**: Execute queries with clear visual feedback.
+   - Styled with custom CSS for a professional look and feel.
 
- این پروژه به عنوان یک پایگاه داده جهت ذخیره و مدیریت اطلاعات انواع مختلف داده‌ها با استفاده از B-Tree طراحی شده است. در واقع کلیدها و ایندکس های پایگاه داده شما، همان نودهای B-Tree هستند که سرعت دسترسی به خانه های پایگاه داده را با استفاده از سرچ درختی افزایش می‌دهند.
+---
 
- توضیحات کامل پیاده سازی و کاربردهای B-Tree را می‌توان از [لینک](https://www.geeksforgeeks.org/introduction-of-b-tree-2/) مطالعه نمود.
+### **2. Optional Enhancements (Bonus Features)**
+- Use of **B+ Tree** for even more efficient range queries.
+- Support for advanced database operations, such as sorting and complex query processing.
+- Visual representation of the B+ Tree structure via the GUI.
 
- همچنین برای آشنایی با پایگاه‌داده‌ها و نحوه کارکرد آن ها می‌توانید از لینک‌های زیر استفاده کنید :‌
-+ https://www.geeksforgeeks.org/what-is-database/
-+ https://www.javatpoint.com/what-is-rdbms
-+ https://www.w3schools.com/mysql/mysql_rdbms.asp
+---
 
-2-	ویژگی‌ها
+## **📂 Project Structure**
 
-2-1-	ایجاد و مدیریت جداول
+### **Modules**
+1. **B+ Tree Implementation**:
+   - `BPlusTree.java`: Core implementation of the B+ Tree.
+   - `Node.java`, `IndexNode.java`, and `LeafNode.java`: Specialized classes for tree nodes.
+   - Supports seamless insert, search, and delete operations with auto-balancing.
 
-•	ایجاد جداول با ویژگی‌های مختلف مانند نام، نوع داده‌ها، و اطلاعات دیگر.
+2. **Database Management**:
+   - `Table.java`: Handles table schema, records, and related operations.
+   - `MakeTable.java`: Provides methods to define and manage table attributes.
 
-•	افزودن، حذف و به‌روزرسانی رکوردها در جداول.
+3. **Query Engine**:
+   - `Query.java`: Implements search and range-based query processing.
 
-2-2-	 پشتیبانی از انواع داده‌ها
+4. **Custom Data Structures**:
+   - `AbstractMap.java`, `UnsortedTableMap.java`: Implements custom map functionality to supplement indexing and data management.
 
-•	پشتیبانی از انواع مختلف داده‌ها از جمله عددی، رشته، و تاریخ.
+5. **Graphical User Interface**:
+   - **FXML Files**:
+     - `Main Page.fxml`: Main view for user interaction.
+     - `MakeTable.fxml`: Interface for creating tables.
+     - `Query.fxml`: Interface for executing queries.
+   - **CSS Files**:
+     - `Alerts.css`, `TextFieldStyle.css`: Provide custom styling for the GUI.
 
-•	مدیریت اطلاعات با دقت و صحت.
+---
 
-2-3-	ایجاد و مدیریت ایندکس‌ها
+## **🛠️ Getting Started**
 
-•	پیاده‌سازی ایندکس‌ها با استفاده از B-Tree برای بهبود عملیات جستجو و مرتب‌سازی.
+### **Prerequisites**
+To run this project, ensure you have:
+- **Java Development Kit (JDK)** version 11 or higher.
+- **Maven** for build and dependency management.
 
-•	ایجاد ایندکس‌های اصلی، یکتا و غیر یکتا.
-
-2-4-	 پشتیبانی از B+ Tree (امتیازی)
-
-•	امکان استفاده از B+ Tree به جای B-Tree به عنوان بخش امتیازی.
-
-•	بهبود عملکرد درخت به ویژه برای عملیات بازه‌ای و جستجوهای پیچیده.
-
-3-	 ساختار پروژه
-
-پروژه به چندین بخش اصلی تقسیم می‌شود:
-
-1-	بخش BTree:
-
-•	پیاده‌سازی اصلی B-Tree با روش‌های افزودن، جستجو و حذف.
-
-•	مدیریت توازن درخت.
-
-2-	بخش DatabaseTable:
-
-•	پیاده‌سازی جدول پایگاه داده با امکانات مدیریت رکوردها و ایندکس‌ها.
-
-•	پشتیبانی از انواع داده‌ها و مدیریت اطلاعات.
-
-3-	بخش Index:
-
-•	پیاده‌سازی ایندکس‌ها با استفاده از B-Tree یا B+ Tree (امتیازی).
-
-•	ایجاد ایندکس‌های اصلی، یکتا و غیر یکتا.
-
-
-## ویژگی‌های امتیازی:
-+ گرافیک
-+ استفاده از B+Tree بجای B Tree  معمولی
-+ پیاده سازی Queryهای پیشرفته برای پایگاه داده
-
-
-### نکات تکمیلی :
-+ این پروژه بصورت گروه های دونفری باید پیاده سازی شود.
-+ بستر پیاده سازی پروژه روی گیت‌هاب می‌باشد.
-+ سعی کنید هریک از بخش‌ها را در یک کامیت جداگانه انجام دهید.
-+ رعایت اصول کدنویسی تمیز بخش بسیار زیادی از نمره را به خود اختصاص می‌دهد و درصورتی که کد کاملا به شکل غیراصولی پیاده سازی شده باشد. تحویل گرفته نمی‌شود.
-+ استفاده از هر زبان، فریمورک و رابط‌های گرافیکی کاملا آزاد است. ( به غیر از زبان و فریمورک های پایتون )
-+ به افرادی که از تکلنولوژی‌های جدید استفاده کنند، توکن تمدید اضافه‌تر داده خواهد شد.
+### **Setup Instructions**
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd btree-erf
+   mvn clean install
+   mvn javafx:run
 
 
-
-
-</div>
