@@ -47,13 +47,6 @@ The project also includes a **Graphical User Interface (GUI)** built with **Java
 
 ---
 
-### **2. Optional Enhancements (Bonus Features)**
-- Use of **B+ Tree** for even more efficient range queries.
-- Support for advanced database operations, such as sorting and complex query processing.
-- Visual representation of the B+ Tree structure via the GUI.
-
----
-
 ## **📂 Project Structure**
 
 ### **Modules**
@@ -92,8 +85,8 @@ To run this project, ensure you have:
 ### **Setup Instructions**
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
-   cd btree-erf
+   git clone https://github.com/Erfan-fn/Bplus-Tree-based-database.git
+   cd "path"
    mvn clean install
    mvn javafx:run
 
