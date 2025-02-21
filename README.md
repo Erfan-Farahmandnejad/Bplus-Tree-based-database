@@ -5,7 +5,7 @@
 
 ---
 
-## **📖 Subject: Overview**
+## **📖 Overview**
 This project implements a **B+ Tree-based database management system (DBMS)** to simulate real-world database operations such as indexing, searching, adding, and deleting records efficiently. By leveraging the **B+ Tree** data structure, the project optimizes these operations, showcasing the power of advanced indexing mechanisms in modern database systems.
 
 The project also includes a **Graphical User Interface (GUI)** built with **JavaFX**, providing an intuitive and user-friendly way to interact with the database.
